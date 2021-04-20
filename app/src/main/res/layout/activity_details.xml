@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/person_photo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/person_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/person_photo"
+        android:text="Title"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_photo" />
+
+    <TextView
+        android:id="@+id/person_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_title"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/person_photo"
+        android:text="Last name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/person_title"
+        app:layout_constraintTop_toBottomOf="@+id/person_photo" />
+
+    <TextView
+        android:id="@+id/person_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_first_name"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/person_photo"
+        android:text="Last name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/person_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/person_photo" />
+
+    <TextView
+        android:id="@+id/person_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_email" />
+
+    <TextView
+        android:id="@+id/person_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
